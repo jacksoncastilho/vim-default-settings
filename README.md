@@ -2,23 +2,25 @@
 
 Criar na home o arquivo .vimrc e colar o script a seguir:
 
-set expandtab </br>
-" espacos em branco em vez de tabulacao "</br>
-set tabstop=4</br>
-" Numero de espacos para a tabulacao "</br>
-set shiftwidth=4</br>
-" Espacos usados para operacao de recuo automatico "</br>
-set autoindent</br>
-" Identacao automatica "</br>
-set smartindent</br>
-" Identacao inteligente para linguagem de programacao "</br>
-set cursorline</br>
-" linha sob cursor atual "</br>
-set number</br>
-" Ativa a enumeracao "</br>
-set undofile</br>
-" Funcao desfazer persistencia "</br>
-if !isdirectory(expand("$HOME/.vim/undodir"))</br>
-    call mkdir(expand("$HOME/.vim/undodir"),"p")</br>
-endif</br>
+```
+set expandtab                    
+" espacos em branco em vez de tabulacao "
+set tabstop=4
+" Numero de espacos para a tabulacao "
+set shiftwidth=4
+" Espacos usados para operacao de recuo automatico "
+set autoindent
+" Identacao automatica "
+set smartindent
+" Identacao inteligente para linguagem de programacao "
+set cursorline
+" linha sob cursor atual "
+set number
+" Ativa a enumeracao "
+set undofile
+" Funcao desfazer persistencia "
+if !isdirectory(expand("$HOME/.vim/undodir"))
+    call mkdir(expand("$HOME/.vim/undodir"),"p")
+endif
 set undodir=$HOME/.vim/undodir
+```
